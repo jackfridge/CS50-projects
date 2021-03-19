@@ -1,6 +1,6 @@
 # CS50-projects
 
-Here is an archive of my CS50 projects.
+Here is an archive of some of my CS50 projects.
 The first 5 weeks of CS50 are primarily in C, so I learned my fundamentals of coding and algorithms in C.
 This evolved into higher level programming like Python and Javascript as well as markup languages like HTML/CSS for web development.
 My web programming experience was primarily with Flask framrwork.
