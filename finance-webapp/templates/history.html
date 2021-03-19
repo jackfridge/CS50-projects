@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+        <!-- display all stocks in the rows passed from, which have been summed up beforehand -->
+        <h1>History</h1>
+        <hr>
+
+        <table id="history">
+            <tr>
+                <th>Stock symbol</th>
+                <th>Shares</th>
+                <th>Stock price</th>
+                <th>Time stamp</th>
+            </tr>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row.symbol }}</td>
+                <td>{{ row.share_qty }}</td>
+                <td>{{ row.buy_price }}</td>
+                <td>{{ row.buy_date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+{% endblock %}

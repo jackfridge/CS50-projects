@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Quote Stock</h1>
+    <hr>
+
+    <!-- Insert values from the lookup function here -->
+    Quoted price for {{ quote.name }} ({{ quote.symbol }}) is {{ price }}.
+
+{% endblock %}
