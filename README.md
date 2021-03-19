@@ -10,10 +10,13 @@ In certain C programs, a library caled cs50.h is included. This training-wheel l
 I've included my first week's projects (for reference later in life), as well as a few programs from weeks 2 onwards that I enjoyed or are diverse enough to warrant uploading it.
 
 ## Week 1 projects:  
-**Hello:** Obligatory hello world, my first program written in C.  
-**Cash:** This simple command-line program asks user for an amount of money and outputs the minimum number of coins needed to get that cash in all coins.  
-**Credit:** This program tests if a credit card number is valid or not using the appropriate algorithms. While these early codes are very dirty and unefficient, I think looking back on where I start will be very important to keep improving and revisiting old programs in order to improve them as fun exercises in the future.  
-**Mario:** A simple command-line program that takes an integer (1 - 8) as input and outputs a mario-style pyramid of blocks as hash (#) symbols.  
-**Population:** User inputs a starting population and an end (target) population. At certain pre-determined birth and death rates, the program will output the number of years needed to reach the target population.  
+**Hello.c:** Obligatory hello world, my first program written in C.  
+**Cash.c:** This simple command-line program asks user for an amount of money and outputs the minimum number of coins needed to get that cash in all coins.  
+**Credit.c:** This program tests if a credit card number is valid or not using the appropriate algorithms. While these early codes are very dirty and unefficient, I think looking back on where I start will be very important to keep improving and revisiting old programs in order to improve them as fun exercises in the future.  
+**Mario.c:** A simple command-line program that takes an integer (1 - 8) as input and outputs a mario-style pyramid of blocks as hash (#) symbols.  
+**Population.c:** User inputs a starting population and an end (target) population. At certain pre-determined birth and death rates, the program will output the number of years needed to reach the target population.  
 
 ## Other projects:  
+**Volume.c:** This command-line program takes a .wav file as a command line argument and is able to control the volume output of the file. Using the file structure of .wav files, we parse the .wav file in a 44 byte chunk to find the .wav header. After, the program parses through the rest of the file in 44 byte chunks and adjusts the volume for each byte, effectively modifying the volume of the total file. The correct way to write the command is as follows (input.wav is the input file, output.wav is the name of the file after being changed, factor is the multiplying factor to be applied to the volume, which can take float point values such as 0.5 to half the volume): $ ./volume input.was output.wav factor  
+**Readability.c:** This command-line program takes as input a text (from a word to multiple sentences) and determines the estimated grade level of that text. It takes into consideration the number of syllables per word, the number of words per sentences and a few more values to estimate the number. It can estimate from "before grade 1" up to "grade 16+", where 16+ indicates at least 4 years of post-secondary education).  
+**Readability.py:** This python program was a few weeks after starting CS50, where we revisited our old C programs to re-write them in python and appreciate the difference between low-level languages and high-level languages. This experiment was very fun and it's most likely at this point where I realized the amount of knowledge we acquired since starting CS50.
