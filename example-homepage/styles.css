@@ -1,0 +1,93 @@
+title {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    text-align: Center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #46A0FF;
+    border: 1px solid #000000;
+    transition-duration: 0.5s;
+}
+
+h1:hover {
+    background-color: #115BA9;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    transition-duration: 0.5s;
+}
+
+body {
+    margin: 20px 20px 20px 20px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin: 5px 10px 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    transition-duration: 0.25s;
+}
+
+button:hover {
+    background-color: #155E18;
+}
+
+img {
+    border-radius: 10px;
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* The buttons on all pages should be similar to ensure fluid transitions between pages, so standardizing the format here*/
+#hom {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 10px 40px 10px 40px;
+    font-size: 18px;
+    text-decoration: bold;
+    background-color: #90ADEF;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    color: #000000;
+    transition-duration: 0.5s;
+}
+
+#hom:hover {
+    background-color: #4C608E;
+    text-decoration: none;
+}
+
+#clicked {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 10px 40px 10px 40px;
+    font-size: 18px;
+    text-decoration: bold;
+    background-color: #3056E1;
+    border: 3px solid #000000;
+    border-radius: 30px;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+#clicked:hover {
+    background-color: #0F2885;
+    text-decoration: none;
+}
+
+.yes_no {
+    background-color: #9A8BA9;
+    color: #ffffff;
+    padding: 1px 25px 1px 25px;
+}
+
+.yes_no:hover {
+    background-color: #563E6E;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // These buttons is a kind of "musical personality test", linking personality traits to pathways in musical theory
+                let answer1 = document.querySelector("#mus_classical");
+                answer1.addEventListener('click', function() {
+                    document.querySelector("#mus_classical").style.backgroundColor = "blue";
+                    document.querySelector("#mus_classical").style.transitionDuration = "1s";
+
+                    // The background of the button changes to match the background of the displayed answer (matching)
+                    document.querySelector("#mus_ear").style.backgroundColor = "#4CAF50";
+                    document.querySelector("#mus_ans1").innerHTML = "You may be more suited for a classical musical path!";
+                    document.querySelector("#mus_ans1").style.color = "white";
+                    document.querySelector("#mus_ans1").style.backgroundColor = "blue";
+
+                    // Transition makes it a smooth change of color, which will switch even if the second button was pressed first
+                    document.querySelector("#mus_ans1").style.transitionDuration = "1s";
+                });
+
+                let answer2 = document.querySelector("#mus_ear");
+                answer2.addEventListener('click', function() {
+                    document.querySelector("#mus_ear").style.backgroundColor = "purple";
+                    document.querySelector("#mus_ear").style.transitionDuration = "1s";
+                    document.querySelector("#mus_classical").style.backgroundColor = "#4CAF50";
+                    document.querySelector("#mus_ans1").innerHTML = 'You may be more suited for a "by ear" approach!';
+                    document.querySelector("#mus_ans1").style.color = "white";
+                    document.querySelector("#mus_ans1").style.backgroundColor = "purple";
+                    document.querySelector("#mus_ans1").style.transitionDuration = "1s";
+                });
+
+                let answer3 = document.querySelector("#mus_difficult");
+                answer3.addEventListener('click', function() {
+                    document.querySelector("#mus_difficult").style.backgroundColor = "blue";
+                    document.querySelector("#mus_difficult").style.transitionDuration = "1s";
+                    document.querySelector("#mus_impro").style.backgroundColor = "#4CAF50";
+                    document.querySelector("#mus_ans2").innerHTML = 'You may be more suited for a classical musical path!';
+                    document.querySelector("#mus_ans2").style.color = "white";
+                    document.querySelector("#mus_ans2").style.backgroundColor = "blue";
+                    document.querySelector("#mus_ans2").style.transitionDuration = "1s";
+                });
+
+                let answer4 = document.querySelector("#mus_impro");
+                answer4.addEventListener('click', function() {
+                    document.querySelector("#mus_impro").style.backgroundColor = "purple";
+                    document.querySelector("#mus_impro").style.transitionDuration = "1s";
+                    document.querySelector("#mus_difficult").style.backgroundColor = "#4CAF50";
+                    document.querySelector("#mus_ans2").innerHTML = 'You may be more suited for a "by ear" approach!';
+                    document.querySelector("#mus_ans2").style.color = "white";
+                    document.querySelector("#mus_ans2").style.backgroundColor = "purple";
+                    document.querySelector("#mus_ans2").style.transitionDuration = "1s";
+                });
+            });
+        </script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Music</title>
+    </head>
+    <body>
+        <h1>Welcome to my CS50 page!</h1>
+
+        <h2>Music</h2>
+
+        <a id="hom" href="index.html">Home</a>
+        <a id="hom" href="cooking.html">Cooking</a>
+        <a id="clicked">Music</a>
+        <a id="hom" href="programming.html">Programming</a>
+        <hr>
+
+        <h3>Understanding the structure of music</h3>
+        <img alt="Music" src="https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="225" height="325" style="float:right">
+
+        <p>In music, while it may seem very easy to feel and interpret musical ideas, it can become very difficult when
+        entering the theoretical aspect of music.</p>
+        <p>In general, musicians should be able to understand the notes and the relationship between them.
+        There are a total of 12 different notes that are repeated at higher frequencies (for example, the C key on a piano
+        is repeated more than one time, and all sound higher or lower, depending on how high or low you go on the keyboard.</p>
+        <b>Here is an example path a musician may take in terms of understanding music and improving their musical knowledge:</b>
+        <ol>
+            <li>Notes (where the notes are on your particular instrument)</li>
+            <li>Scales and chords (how songs are written in certain keys)</li>
+            <li>Intervalls and ear training (understanding the distance between notes and perceiving them by sound)</li>
+            <li>Advanced chords and modes (advanced theory explores the feelings you can invoke with certain notes and how they interact between each other in a song)</li>
+        </ol>
+        <p>While this is more of a classical approach, some people may pick a more loose way of learning. This is the case
+        for people who learn "by ear". While most people who play for a long time end up studying theory at some point to
+        improve their knowledge, people who learn by ear get various advantages and disadvantages compared to classically
+        trained musicians. There is no clear winner, just pick a method that speaks to you!</p>
+        <hr>
+
+        <!-- These mini quizzes associate a personal trait with which path is more suitable, sort of like Buzzfeed's take -->
+        <b>Are you someone who likes structure? Or would you rather be left to experiment with trial and error?</b>
+        <div></div>
+        <button id="mus_classical">Structure</button>
+        <button id="mus_ear">Experimentation</button>
+        <div></div>
+        <i id="mus_ans1"></i>
+        <hr>
+
+        <b>Do you want to be able to improvise many songs? Or do you value hard work on a single song, to be able to play difficult songs?</b>
+        <div></div>
+        <button id="mus_difficult">Difficult songs</button>
+        <button id="mus_impro">Improvise</button>
+        <div></div>
+        <i id="mus_ans2"></i>
+        <hr>
+
+        <i>If you want to learn more about musical theory, Youtube is a great ressource! Look around, there is a ton of information
+        on the internet, and it all comes with experience : keep practicing and keep improving!</i>
+        <hr>
+
+        <div class="alert alert-primary" role="alert">
+            This website was made by Github user: jackfridge
+        </div>
+
+    </body>
+</html>
